@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voce é memada?</title>
+    <style>
+            body{
+                    font: normal 14pt arial;
+                    color: aliceblue;
+                    background-color: crimson;
+                    text-align: center;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Você é memada? </h1>
+    <input type="text" name="txtmd" id="txtmd">
+    <input type="button" value="😳" onclick="bota()">
+    <div id="resposta">
+
+
+    </div>
+    <script>
+            function bota(){
+                        var resi = (document.querySelector('input#txtmd').value.toLowerCase())
+                        var resposta = document.querySelector('div#resposta')
+                    if (resi == "sim") {
+                            resposta.innerHTML += `então você é memada..? me apaixonei😳😳`
+
+                    }
+                    if (resi == "não") {
+                            resposta.innerHTML += `poxa... lamentavel di vdd 9vinha😔`
+
+                    }
+
+
+            } 
+
+    </script>
+
+</body>
+</html>

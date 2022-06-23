@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: rgb(139, 77, 197);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+            interaja...
+    </div>
+
+    <script>
+            var are = document.querySelector('div#area') /*colocar do lado de foro facilita
+                                                         pois assim ele vai usar essa variavel 
+                                                         em todo o comando abaixo dentro do script */
+        function clicar() {
+            are.innerHTML = 'aiiinn 😖😨'
+            are.style.background = 'red'
+        }
+        function entrar() {
+            are.innerHTML = 'eita-😳'
+        }
+        function sair() {
+            are.innerHTML = 'interaja...😰'
+            are.style.background = 'rgb(139, 77, 197)'
+        }
+
+    </script>
+
+</body>
+</html>
